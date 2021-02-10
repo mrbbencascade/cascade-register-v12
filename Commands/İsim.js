@@ -25,7 +25,7 @@ module.exports.execute = async (client, message, args, ayar, emoji) => {
   };
   db.push(`isim_${uye.id}_${message.guild.id}`, yazilacakIsim);
   uye.setNickname(`${yazilacakIsim}`).catch();
-  message.channel.send(new MessageEmbed().setColor(client.randomColor()).setThumbnail(uye.user.avatarURL({dynamic: true, size: 2048})).setFooter("Zuko ❤️ Carry").setTimestamp().setDescription(`${emoji("gif1")} İsmi Güncellenen Kullanıcı: ${uye}\n${emoji("gif1")} Komutu Kullanan Yetkili: ${message.author}\n${emoji("gif1")} Güncellenen İsim: \`${yazilacakIsim}\``)).catch();
+  message.channel.send(new MessageEmbed().setColor(client.randomColor()).setThumbnail(uye.user.avatarURL({dynamic: true, size: 2048})).setFooter("Cascade").setTimestamp().setDescription(`${emoji("gif1")} İsmi Güncellenen Kullanıcı: ${uye}\n${emoji("gif1")} Komutu Kullanan Yetkili: ${message.author}\n${emoji("gif1")} Güncellenen İsim: \`${yazilacakIsim}\``)).catch();
 };
 module.exports.configuration = {
   name: "isim",
